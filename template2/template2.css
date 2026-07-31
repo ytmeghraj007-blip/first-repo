@@ -1,0 +1,54 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    height: 95%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 36% 28% 36%;
+    grid-template-rows: 10% 31.5% 31.5% 27%;
+    grid-template-areas: 
+    "header header header"
+    "top top top"
+    "left-center center-center right-center"
+    "bottom bottom bottom"
+    ;
+    
+}
+header{
+    
+    grid-area: header;
+    background-color: rgb(227, 227, 104);
+}
+.top{
+    grid-area: top;
+    background-color: red;
+}
+.bottom{
+    grid-area: bottom;
+    background-color: lightblue;
+}
+.left-center{
+    grid-area: left-center;
+    background-color: aqua;
+}
+.center-center{
+ 
+    grid-area: center-center;
+    background-color: lightcyan;
+}
+.right-center{
+    grid-area: right-center;
+    background-color: lightgreen;
+}

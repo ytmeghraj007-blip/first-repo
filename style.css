@@ -1,0 +1,88 @@
+@font-face {
+    font-family: bhutiya;
+    src: url(./RUSTY\ ATTACK\ DEMO\ Regular.otf);
+}
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 50px;
+}
+html,
+body{
+    
+    height: 100%;
+    width: 100%;
+
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+     grid-template-columns: 22% 20% 7% 27% 22%;
+     grid-template-rows: 30% 26% 7% 14% 23%;
+     grid-template-areas: 
+     "left-top top-center1 top-center1 top-center2 right-top"
+     "left-top center center center right-top"
+     "left-bottom center center center right-top"
+     "left-bottom center center center right-bottom"
+     "left-bottom bottom-center1 bottom-center2 bottom-center2 right-bottom"
+     ;
+     gap: 5px;
+}
+.left-top{
+    background-color: royalblue;
+    grid-area: left-top;
+    border: 2px solid white;
+    border-radius:20px;
+}
+.left-bottom{
+    background-color: rgb(232, 131, 36);
+     grid-area: left-bottom;
+      border-radius: 20px;
+      border: 2px solid white;
+}
+.right-top{
+    background-color: rgb(18, 144, 179);
+     grid-area: right-top;
+      border-radius: 20px;
+       border: 2px solid white;
+}
+.right-bottom{
+    background-color: rgb(16, 170, 114);
+     grid-area: right-bottom;
+      border-radius: 20px;
+       border: 2px solid white;
+}
+.center{
+    background-color: rgb(8, 251, 125);
+     grid-area: center;
+      border-radius: 20px;
+       border: 2px solid white;
+}
+.top-center1{
+    background-color: rgb(51, 222, 8);
+     grid-area: top-center1;
+      border-radius: 20px;
+       border: 2px solid white;
+}
+.top-center2{
+    background-color: rgb(146, 10, 173);
+     grid-area: top-center2;
+      border-radius: 20px;
+       border: 2px solid white;
+}
+.bottom-center1{
+    background-color: rgb(185, 10, 68);
+     grid-area: bottom-center1;
+      border-radius: 20px;
+       border: 2px solid white;
+}
+.bottom-center2{
+    background-color: rgb(233, 88, 3);
+     grid-area: bottom-center2;
+      border-radius: 20px;
+      border: 2px solid white;
+}

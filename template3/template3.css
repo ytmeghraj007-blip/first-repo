@@ -1,0 +1,61 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    height: 95%;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 7% 21% 21% 21% 15% 15%;
+    grid-template-areas: 
+    "top top"
+    "center1 center1"
+    "left-center2 right-center2"
+    "left-center3 right-center3"
+    "center4 center4"
+    "bottom bottom"
+    ;
+    gap: 5px;
+}
+.top{
+    background-color: aqua;
+    grid-area: top;
+}
+.center1{
+    grid-area: center1;
+    background-color: rgb(102, 155, 201);
+}
+.left-center2{
+    grid-area: left-center2;
+    background-color: aquamarine;
+}
+.right-center2{
+    grid-area: right-center2;
+    background-color: blueviolet;
+}
+.left-center3{
+    grid-area: left-center3;
+    background-color: rgb(41, 41, 226);
+}
+.right-center3{
+    grid-area: right-center3;
+    background-color: rgb(224, 59, 59);
+}
+.center4{
+    grid-area: center4;
+    background-color: rgb(172, 172, 66);
+}
+.bottom{
+    grid-area: bottom;
+    background-color: rgb(205, 127, 32);
+}
