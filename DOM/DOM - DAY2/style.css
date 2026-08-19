@@ -1,0 +1,35 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.bulb{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border : 4px solid black;
+}
+
+button{
+    padding: 10px 30px;
+    size:   50px;
+    background-color: rgb(148, 122, 173);
+    border-radius: 20px;
+}
+.lightup{
+    background-color: yellow;
+}
