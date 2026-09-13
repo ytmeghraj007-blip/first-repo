@@ -14,3 +14,8 @@ btn.addEventListener('click',() =>{
       </div>`
       inp.value = "";
 });
+
+    const edit = document.querySelector(".edit");
+    
+
+
