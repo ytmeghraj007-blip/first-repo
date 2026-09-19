@@ -29,6 +29,7 @@ main{
     border: 2px solid white;
     border-radius: 15px;
     padding: 10px;
+    cursor: pointer;
 }
 .box2{
    position: absolute;
@@ -52,4 +53,15 @@ main{
 }
 p{
     color: rgb(248, 245, 245);
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 150%;
 }
