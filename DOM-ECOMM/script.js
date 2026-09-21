@@ -3,8 +3,10 @@ const create = document.querySelector("#create");
 const closeBtn = document.querySelector(".cross");
 const form = document.querySelector('form');
 
-const productDiv = document.querySelector(".products");
-const productArr = [];
+const productDiv = document.querySelector(".products") || [];
+
+let lsd = JSON.parse(localStorage.getItem("products"));
+const productArr = lsd;
 let indexUpdate = null;
 
 let ui = ()=>{
@@ -27,7 +29,7 @@ let ui = ()=>{
             </div>`
     });
 }
-
+ui();
 
 
 
@@ -58,6 +60,7 @@ form.addEventListener('submit',(event)=>{
         return;
     }
       
+    
 
     let obj = {
         productName,
@@ -68,9 +71,13 @@ form.addEventListener('submit',(event)=>{
     if(indexUpdate !== null){
         productArr[indexUpdate] = obj;
         indexUpdate = null;
+        localStorage.setItem('products',JSON.stringify(productArr));
     }
+     
     else{
+    
         productArr.push(obj);
+        localStorage.setItem('products',JSON.stringify(productArr));
     }
     
     ui();
@@ -87,9 +94,17 @@ const updateProduct = (name)=>{
     form[1].value = product.description;
     form[2].value = product.price;
     form[3].value = product.imageUrl;
+
 }
 
 const deleteProduct = (index)=>{
     productArr.splice(index,1);
+     localStorage.setItem('products',JSON.stringify(productArr));
     ui();
 }
+
+
+
+
+
+
